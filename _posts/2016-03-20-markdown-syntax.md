@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title:  "Markdown Syntax"
 date:   2016-03-15
@@ -10,7 +10,7 @@ tag:
 - test
 - jekyll
 comments: true
----
+--- -->
 
 ## HTML Elements
 
