@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "TIL LOG"
 date:   2023-01-02
 excerpt: "Today I Learned Log."
