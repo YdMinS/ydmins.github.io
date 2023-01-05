@@ -45,4 +45,15 @@ TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 �
     
 
   - 아직 Spring DI를 잘 이해 못한것 같다.
-  - 
+
+#### 2023-01-05
+1. 스프링의 정석 Chpater3 Spring DI 개념을 제대로 들어가기전 일단 한 번 써보기를 했다.
+    - xml 파일을 이용해서 Beans 태그 내에 Bean들을 정의해 보았다.
+        - Bean 태그 사이에 내용들
+            - property
+                Setter가 정의되어 있을 경우에 사용 가능하다.
+            - contructor-arg
+                생성자가 선언되어 있을 경우에 사용 가능하다.
+    - 강의를 듣는 내내 bean을 왜 굳이 만드는 것일까?란 물음이 계속 들었다.
+        - 다음 강의 초반 부분만 살짝 들었는데, Bean이라는 것이 재사용 가능한 Component, 상태(Intance Variable), Getter, Setter, No-Args-Constroctor를 따로 저장해 둔 것이라고 한다. 즉, 오늘까지 이해한 바로는 계속 사용해야 할 것들을 콩속에 넣어두고 필요할 때마다 꺼내쓰도록 만든것이 bean이라는 것이다.
+        
