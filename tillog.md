@@ -22,7 +22,11 @@ TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 �
 2. GITHUB을 이용해서 TIL용 블로그를 만들었다.
   - 개발 공부 일기쓰듯이 사용할 계획이다.
 
-#### 2023-01-03
+<details>
+<summary>2023년 1월</summary>
+<div markdown="1">       
+    
+    #### 2023-01-03
 1. 스프링의 정석 Chpater3 처음부터 다시 듣기 시작했다.
   - Spring DI에 대해 배우기 시작했다.
   - 변경에 유리한 코드를 작성하기 위해 분리를 잘 해야 한다. 분리하는 방법에는 3가지가 있다. 
@@ -33,7 +37,6 @@ TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 �
 2. ydmins.github.io 수정했다.
   - 어제 처음으로 github.io 블로그를 만들 때는 많이 낯설었는데 오늘은 확실히 좀 더 보였다. 확실히 할수록 나아진다.
 
-<summary>
 #### 2023-01-04
 1. 스프링의 정석 Chapter3 Spring DI 개념을 이해하기 위한 기초강의를 다 들었다.
     - 객체 컨테이너 (ApplicationContext)에 대해 배웠다.
@@ -57,4 +60,6 @@ TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 �
                 생성자가 선언되어 있을 경우에 사용 가능하다.
     - 강의를 듣는 내내 bean을 왜 굳이 만드는 것일까?란 물음이 계속 들었다.
         - 다음 강의 초반 부분만 살짝 들었는데, Bean이라는 것이 재사용 가능한 Component, 상태(Intance Variable), Getter, Setter, No-Args-Constroctor를 따로 저장해 둔 것이라고 한다. 즉, 오늘까지 이해한 바로는 계속 사용해야 할 것들을 콩속에 넣어두고 필요할 때마다 꺼내쓰도록 만든것이 bean이라는 것이다.
-    </summary>
+
+</div>
+</details>
