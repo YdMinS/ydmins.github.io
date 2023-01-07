@@ -18,7 +18,7 @@ TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 �
 <details>
 <summary>2023년 1월</summary>
 <div markdown="1">       
-#### 2023-01-02
+#### 2023-01-02 MON
 1. 패스트캠퍼스 - 스프링의 정석 강의를 들었다.
   - MySQL 작동안하는 이슈가 있었다.
   - Bean 관련 또는 3과 전체 복습이 필요해 보인다.
@@ -26,7 +26,7 @@ TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 �
 2. GITHUB을 이용해서 TIL용 블로그를 만들었다.
   - 개발 공부 일기쓰듯이 사용할 계획이다.
     
-#### 2023-01-03
+#### 2023-01-03 TUE
 1. 스프링의 정석 Chpater3 처음부터 다시 듣기 시작했다.
   - Spring DI에 대해 배우기 시작했다.
   - 변경에 유리한 코드를 작성하기 위해 분리를 잘 해야 한다. 분리하는 방법에는 3가지가 있다. 
@@ -37,7 +37,7 @@ TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 �
 2. ydmins.github.io 수정했다.
   - 어제 처음으로 github.io 블로그를 만들 때는 많이 낯설었는데 오늘은 확실히 좀 더 보였다. 확실히 할수록 나아진다.
 
-#### 2023-01-04
+#### 2023-01-04 WED
 1. 스프링의 정석 Chapter3 Spring DI 개념을 이해하기 위한 기초강의를 다 들었다.
     - 객체 컨테이너 (ApplicationContext)에 대해 배웠다.
         - 객체들을 Map에 넣어두고 사용하는 기능이다.
@@ -50,7 +50,7 @@ TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 �
 
   - 아직 Spring DI를 잘 이해 못한것 같다.
 
-#### 2023-01-05
+#### 2023-01-05 THU
 1. 스프링의 정석 Chpater3 Spring DI 개념을 제대로 들어가기전 일단 한 번 써보기를 했다.
     - xml 파일을 이용해서 Beans 태그 내에 Bean들을 정의해 보았다.
         - Bean 태그 사이에 내용들
@@ -62,13 +62,24 @@ TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 �
         - 다음 강의 초반 부분만 살짝 들었는데, Bean이라는 것이 재사용 가능한 Component, 상태(Intance Variable), Getter, Setter, No-Args-Constroctor를 따로 저장해 둔 것이라고 한다. 즉, 오늘까지 이해한 바로는 계속 사용해야 할 것들을 콩속에 넣어두고 필요할 때마다 꺼내쓰도록 만든것이 bean이라는 것이다.
     
 
-#### 2023-01-06
+#### 2023-01-06 Fri
 1. 스프링 정석 Chapter3 Spring DI 개념을 제대로 시작했다.
     - Bean은 Spring Container가 관리하는 객체이다.
     - Spring Container는 Bean의 저장소이자 관리자(생성, 소멸, 연결)이다.
 2. Application Context에 대해서 배웠다.
     - TIL을 기록하다 보니 Spring Container에서 왜 갑자기 Application Context로 넘어왔는지 모른다는 점을 발견했다.
     - 줄여서 AC라고한다.
-
+    
+#### 2023-01-07 Sat
+1. 스프링 정석 Chapter3 Spring DI 강의를 다 들었다.
+    - 지난번에 파악을 못한 ApplicationContext를 이해하게 됐다.
+        - XMl을 이용해서 ApplicationContext에 저장할 Bean들을 설정한다.
+        - @Component Annotation을 사용하면 XML을 작성하지 않고 ApplicationContext에 Bean을 설정할 수 있다.
+        - @Autowired 또는 @Resource를 사용하면 ApplicationContext에 저장되어있는 객체를 주입해서 사용할 수 있다.
+            - @Autowired는 타입으로 객체를 검색한다. 만약 같은 타입의 객체가 여러개 있다면 이름이 같은 것을 찾는다.
+            - @Resource는 이름으로 객체를 검색한다. 일치하는 이름의 객체가 없다면 예외가 발생한다.
+    - Spring DI란
+        - ApplicationContext에 저장되어 있는 Bean을 호출할 때 Bean이 사용할 객체를 전달해 주는 것을 "의존성 주입 (Dependency Injction)"이라 한다.
+        - 즉, DI의 의존성은 Bean의 관점이다.
 </div>
 </details>
