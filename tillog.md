@@ -81,5 +81,15 @@ TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 �
     - Spring DI란
         - ApplicationContext에 저장되어 있는 Bean을 호출할 때 Bean이 사용할 객체를 전달해 주는 것을 "의존성 주입 (Dependency Injction)"이라 한다.
         - 즉, DI의 의존성은 Bean의 관점이다.
+
+#### 2023-01-09 Mon
+1. 스프링 정석 Chpater2 관심사의 분리와 MVC 패턴에 대한 강의를 들었다.
+    - 코드를 입력, 처리, 출력으로 분리 시켜 작성하는 코드는 처리에 집중할 수 있다.
+    - 이 때 처리부분의 코드를 Controller라고 한다. 
+    - Controller에서 처리한 결과를 Model 객체에 담아둔다.
+    - 이 Model의 데이터를 기반으로 View 영역이 결과물을 출력해준다.
+    - MVC란?
+        - 관심사의 분리를 통해 코드를 Controller(처리영역)과 View(출력영역)으로 나누고 그 두 영역에 데이터를 전달하기 위해 Model이라는 데이터 전달 객체를 도입한 코딩 방식이다.
+    
 </div>
 </details>
