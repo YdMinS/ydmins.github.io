@@ -14,6 +14,8 @@ comments: true
 # TIL LOG란?
 TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 개발자들의 기록의 한 형태이다. 여기다 LOG를 붙인 이유는 이 페이지를 인덱스와 같은 페이지로 활용하기 위함이다. 다시말해서 어떤 공부를 했는지 간단하게는 기록하지만 자세한 내용들은 내용의 종류에 따라서 다양한 매체에 기록할 예정이다.
 
+## TIL LOG 사용방법
+TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름의 기록이다. 따라서 각 내용의 자세한 내용은 https://ydmins.com 에 방문해서 날짜 또는 주제를 검색해서 찾아볼 수 있다.
 
 <details>
 <summary>2023년 1월</summary>
@@ -91,5 +93,11 @@ TIL이란 "Today I Learned"의 약자로 오늘 배운 것들을 기록하는 �
     - MVC란?
         - 관심사의 분리를 통해 코드를 Controller(처리영역)과 View(출력영역)으로 나누고 그 두 영역에 데이터를 전달하기 위해 Model이라는 데이터 전달 객체를 도입한 코딩 방식이다.
     
+#### 2023-01-10 Tue
+1. 스프링 정석 Chpater2 서블릿과 JSP에 대해한 강의를 들었다.
+    - Servlet은 Spring의 Controller와 RequestMapping을 함께 쓰는 것과 같다.
+    - JSP는 요청시 Servlet으로 변환된다.
+    - Servlet에 대해서 여러가지를 배웠지만 Servlet자체가 무엇인지에 대한 답은 찾지 못했다.
+    - 내장객체 (Implicit Obejcts)에 대해서 배웠다.
 </div>
 </details>
