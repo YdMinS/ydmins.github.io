@@ -105,5 +105,20 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
     - 쿠키는 브라우저에서 생성하여 브라우저에 저장하고 서버와 주고 받는 데이터 모음이다.
     - 세션은 서버에서 생성하여 서버에 저장하고 전달받은 쿠키와 비교하여 사용하는 데이터 모음이다.
     
+#### 2023-01-12 Thu
+1. 스프링 정석 Chapter2 예외처리에 대한 강의를 들었다.
+    - 예외처리를 처리하는 방법이 여러가지가 있다.
+        1. try-catch
+        2. 클래스 내에 @ExceptionHamdler를 이용한 처리 메서드 생성하기
+        3. 새로운 클래스를 만들어 2에서와 같은 ExceptionHandler-method를 생성한다.
+           이 때 @ControllerAdvice를 붙여주면 여러 클래스에서 발생하는 Exception을 한 번에 처리할 수 있다. 
+            - @ControllerAdvice : 모든 클래스의 Exception을 처리
+            - @ControllerAdvice("패키지 패스") : 특정 패스 내의 클래스에서 발생하는 Exception을 처리
+        4. Error.jsp : 에러를 띄우는 view 파일을 만든뒤 속성에 isErrorPage="true"를 추가하면 자동으로 에러를 처리해준다.
+        5. web.xml에 error-page 속성을 이용해 상태 코드별 띄울 view를 설정할 수 있다.
+        6. servlet-context.xml에 SimpleMappingExceptionResolver를 추가해
+            - View by Exception
+            - Status code by View
+           를 설정할 수 있다.
 </div>
 </details>
