@@ -120,5 +120,15 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
             - View by Exception
             - Status code by View
            를 설정할 수 있다.
+    
+#### 2023-01-13 Fri
+1. 스프링 정석 Cahpter3 Spring으로 DB 연결하는 방법에 대한 강의를 들었다.
+     - JDBC를 이용하는 방법과 Spring JDBC를 이용하는 방법
+        - JDBC를 사용하면 DriveManager를 사용한다.
+        - Spring JDBC를 사용하면 DriverManagerDataSource를 사용한다.
+     - Spring JDBC : Bean에 연결 정보를 저장해 두고 사용할 수 있다.
+2. 스프링 정석 Chapter3 Spring으로 DB (MySQL)을 다루면서 TDD사용을 배웠다.
+     - 인스턴스 객체로 사용되는 DataSource 객체는 테스트 메서드들이 공유해서 사용하지 않는다.
+     - 모든 테스트 들은 서로 독립적이어야 하고 실행 횟수에 상관없이 항상 성공해야 한다.
 </div>
 </details>
