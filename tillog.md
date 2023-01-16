@@ -122,7 +122,7 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
            를 설정할 수 있다.
     
 #### 2023-01-13 Fri
-1. 스프링 정석 Cahpter3 Spring으로 DB 연결하는 방법에 대한 강의를 들었다.
+1. 스프링 정석 Chapter3 Spring으로 DB 연결하는 방법에 대한 강의를 들었다.
      - JDBC를 이용하는 방법과 Spring JDBC를 이용하는 방법
         - JDBC를 사용하면 DriveManager를 사용한다.
         - Spring JDBC를 사용하면 DriverManagerDataSource를 사용한다.
@@ -130,5 +130,15 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
 2. 스프링 정석 Chapter3 Spring으로 DB (MySQL)을 다루면서 TDD사용을 배웠다.
      - 인스턴스 객체로 사용되는 DataSource 객체는 테스트 메서드들이 공유해서 사용하지 않는다.
      - 모든 테스트 들은 서로 독립적이어야 하고 실행 횟수에 상관없이 항상 성공해야 한다.
+    
+#### 2023-01-16 Mon
+1. 스프링 정석 Chapter2 DispatcherServlet에 대한 강의를 들었다.
+    - DispatcherServlet의 요청 처리 과정
+        - 요청을 HandlerMapping에서 어떤 메서드로 처리할지 참조한다.
+        - 처리할 메서드를 HandlerAdaptor를 통해 호출하고 결과로 Model과 출력에 사용할 View 이름을 받는다.
+        - 이 View 이름을 이용해 ViewResolver에서 정확한 파일정보를 참조한다.
+        - 여태까지 취합한 결과 Model,ViewFile 정보를 JstlView를 통해 Response 객체로 만들고 이를 Client로 보낸다.
+    - DoDispatch
+        - DispatcherServlet이 요청을 처리하는 일련의 과정을 처리하는 DispatcherServlet 내의 메서드이다.
 </div>
 </details>
