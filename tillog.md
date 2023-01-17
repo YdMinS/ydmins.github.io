@@ -140,5 +140,12 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
         - 여태까지 취합한 결과 Model,ViewFile 정보를 JstlView를 통해 Response 객체로 만들고 이를 Client로 보낸다.
     - DoDispatch
         - DispatcherServlet이 요청을 처리하는 일련의 과정을 처리하는 DispatcherServlet 내의 메서드이다.
+    
+#### 2023-01-17 Tue
+1. 스프링의 정석 Chapter3 DAO에 대한 강의를 들었다.
+    - DAO
+        - Data Access Object
+        - Table당 하나의 DAO가 존재한다.
+        - DAO는 인터페이스로 구현하고 구현체는 DaoImpliment로 분리해서 구현한다.
 </div>
 </details>
