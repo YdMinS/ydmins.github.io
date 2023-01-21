@@ -147,5 +147,11 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
         - Data Access Object
         - Table당 하나의 DAO가 존재한다.
         - DAO는 인터페이스로 구현하고 구현체는 DaoImpliment로 분리해서 구현한다.
+    
+#### 2023-01-21 Sat
+1. 스프링 완전판 초격차 강의 Chapter1 Todo 리스트 만들기 강의를 들었다.
+    - Modle, Repository, Serice, Controller를 한 번 빠르게 만들어보았다.
+    - 빠르게 만들어 보니, Spring Boot로 웹을 구성하는 전체 그림을 그려볼 수 있어서 좋은 복습이었다.
+    - RequestMapping("/") 하나를 이용해 GET, POST, PATCH, DELETE를 모두 활용하니 많은 기능을 Path 하나로 구현할 수 있었다.
 </div>
 </details>
