@@ -153,5 +153,22 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
     - Modle, Repository, Serice, Controller를 한 번 빠르게 만들어보았다.
     - 빠르게 만들어 보니, Spring Boot로 웹을 구성하는 전체 그림을 그려볼 수 있어서 좋은 복습이었다.
     - RequestMapping("/") 하나를 이용해 GET, POST, PATCH, DELETE를 모두 활용하니 많은 기능을 Path 하나로 구현할 수 있었다.
+    
+#### 2023-01-25 Wed
+1. 스프링의 정석 Chapter3 Transaction, Commit, Rollback에 대한 강의를 들었다.
+    - Transaction : 더이상 나눌 수 없는 작업의 단위
+    - Commit : 가공한 데이터를 DB에 반영하기
+    - Rollback : 데이터 가공 중 직전 커밋상태로 되돌리기 (커밋을 잘못한 걸 알아챈 걸 되돌리는 것이 아니다.)
+    - Transaction은 ACID를 따라야 한다.
+        - Atomity : 원자성
+        - Consistensy : 일관성
+        - Isolation : 고립성
+        - Durability
+    - Isolation Level
+        - Transaction은 독립적으로 수행되어야 하지만 DB의 성능 및 사용자의 편의를 위해 그 고립의 정도 (독립의 정도)를 조절할 수 있다.
+            - READ UNCOMMITED : 커밋되지 않은 데이터도 읽을 수 있다. (고립도 최저)
+            - READ COMMITED : 커밋된 데이터만 읽을 수 있다.
+            - REPEATABLE READ : 자신의 Transaction이 시작 될 때의 데이터를 Transaction이 끝날 때까지 반복적으로 읽을 수 있다. 즉 Transacion이 진행중일 떄 반영된 DB의 데이터를 읽어들이지 않는다.
+            - SERIALIZABLE : 한 번에 하나의 Transaction만 수행한다. 이론적으로 가장 이상적인 고립도이다. (고립되 최고)
 </div>
 </details>
