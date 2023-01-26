@@ -170,5 +170,14 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
             - READ COMMITED : 커밋된 데이터만 읽을 수 있다.
             - REPEATABLE READ : 자신의 Transaction이 시작 될 때의 데이터를 Transaction이 끝날 때까지 반복적으로 읽을 수 있다. 즉 Transacion이 진행중일 떄 반영된 DB의 데이터를 읽어들이지 않는다.
             - SERIALIZABLE : 한 번에 하나의 Transaction만 수행한다. 이론적으로 가장 이상적인 고립도이다. (고립되 최고)
+
+#### 2023-01-26 Thu
+1. 스프링의 정석 Chapter3 : AOP에 대한 강의 중 맛보기 부분만 들었다.
+    - AOP는 동적으로 메서드에 코드를 삽입하는 기술이다.
+    - 삽입할 코드를 분리시켜 작성한 클래스를 advice라 부른다.
+    - 코드는 메서드의 맨 앞 또는 맨 뒤에만 삽입 가능하고 위치에 따른 명칭이 있다.
+        - 맨 앞에 주입 : before-advice
+        - 맨 뒤에 주입 : after-advice
+        - 맨 앞과 맨 뒤 모두 주입 : around-advice
 </div>
 </details>
