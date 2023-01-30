@@ -179,5 +179,20 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
         - 맨 앞에 주입 : before-advice
         - 맨 뒤에 주입 : after-advice
         - 맨 앞과 맨 뒤 모두 주입 : around-advice
+    
+#### 2023-01-30 Mon
+1. 스프링의 정석 Chapter3 : AOP와 @Trnasactional에 대해 공부중이다.
+    - AOP = Asepct Oriented Programming = 관점 지향 프로그래밍
+        - Cross-Cutting Concerns (= 횡단 관심사)를 분리하여 중복제거한다.
+    - 분리한 코드를 실행하는 과정에서 동적으로 주입해주다. 이를 AOP라고 한다.
+    - 용어
+        - Advice : 부가기능로 분리해낸 코드를 말한다.
+        - Target : Advice를 주입할 객체를 말한다.
+        - Join Point : Target내에서 실제로 Advice가 주입될 대상(메서드)를 말한다.
+        - Proxy : 동적으로 Advice가 Target내의 Join Point에 주입되어 마치 원래 하나의 객체였던 것처럼 보이는 순간의 객체를 Proxy라고 한다.
+        - Weaving : Proxy를 만드는 과정을 Weaving이라고 한다.
+        - Pointcut : join point를 특정하기 위해 정의한 패턴을 포인트 컷이라고 한다.
+2. @Transactional
+    - @Transactional 애너테이션이 붙은 Scope내의 모든 기능들이 성공적으로 수행됐을 경우에만 결과로 반영한다.
 </div>
 </details>
