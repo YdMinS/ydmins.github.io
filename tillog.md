@@ -195,4 +195,17 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
 2. @Transactional
     - @Transactional 애너테이션이 붙은 Scope내의 모든 기능들이 성공적으로 수행됐을 경우에만 결과로 반영한다.
 </div>
+<summary>2023년 2월</summary>
+<div markdown="1">       
+#### 2023-02-02 Thu
+1. 스프링의 정석 Chapter3 : Transaction 적용하는 실습을 했다.
+    - TrnasacionManager
+        - Tx를 적용하기 위해서는 TransactionManager 객체를 만들어야 한다.
+        - TransactionManger를 이용해 TransactionStatus 객체에 Tx 정보를 담는다.
+        - try-catch문에서 try 부분에 Tx로 묶을 일련의 과정 및 메서드들을 전부 담는다.
+            - 모두가 성공적으로 이루어지면 TransactionManager를 이용해 TransactionStatus 객체를 Commit 한다.
+            - 실패시 catch문이 받아서 TransactionManager를 이용해 TransactionStatus 객체를 Rollback 한다.
+    - DataSourceUtils를 이용한 Connection 생성
+        - Tx으로 묶여 있는 모든 메서드는 하나의 Connection을 공유해야 한다. 때문에 기존에 DataSource객체를 이용한 방식에서 DataSourceUtils를 활용한 Connection 생성 방식으로 변경해 줘야 한다.
+</div>
 </details>
