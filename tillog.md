@@ -207,5 +207,17 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
             - 실패시 catch문이 받아서 TransactionManager를 이용해 TransactionStatus 객체를 Rollback 한다.
     - DataSourceUtils를 이용한 Connection 생성
         - Tx으로 묶여 있는 모든 메서드는 하나의 Connection을 공유해야 한다. 때문에 기존에 DataSource객체를 이용한 방식에서 DataSourceUtils를 활용한 Connection 생성 방식으로 변경해 줘야 한다.
+    
+#### 2023-02-08 Wed
+1. 스프링의 정석 Chapter3 : @Transactional 완광했다.
+    - @Transactional의 속성에 대해서 공부했다.
+        - 그 중 Propagation에 대해서 알아봤다.
+            - REQUIRED (Default) : 진행 중인 Tx의 요소로가 된다.
+            - REQUIRES_NEW : 메인 Tx와 독립적인 Tx를 실행한다.
+            - NESTED : REQUIRES_NEW와 동일하지만 메인 Tx가 Rollback시 함께 Rollback된다. 반대는 REQUIRES_NEW와 마찬가지로 성립하지 않는다.
+            - SUPPORTS : 메인 Tx가 있다면 요소가 되지만, 없다면 Tx 수행 없이 진행한다.
+            - MANDATORY : 메인 Tx 내에서만 작동하고 그렇지 않으면 예외를 발생한다.
+            - NOT_SUPPORTED : Tx 적용 없이 실행하지만, 메인 Tx가 수행중이라면 일시정지(Suspend) 시킨다.
+            - NEVER : Tx 적용 없이 실행하지만, 메인 Tx가 수행중이면 예외를 발생시킨다.
 </div>
 </details>
