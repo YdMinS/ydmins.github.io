@@ -195,6 +195,8 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
 2. @Transactional
     - @Transactional 애너테이션이 붙은 Scope내의 모든 기능들이 성공적으로 수행됐을 경우에만 결과로 반영한다.
 </div>
+    </details>
+    <details>
 <summary>2023년 2월</summary>
 <div markdown="1">       
 #### 2023-02-02 Thu
@@ -219,5 +221,18 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
             - MANDATORY : 메인 Tx 내에서만 작동하고 그렇지 않으면 예외를 발생한다.
             - NOT_SUPPORTED : Tx 적용 없이 실행하지만, 메인 Tx가 수행중이라면 일시정지(Suspend) 시킨다.
             - NEVER : Tx 적용 없이 실행하지만, 메인 Tx가 수행중이면 예외를 발생시킨다.
+    
+#### 2023-02-09 Thu
+1. 스프링의 정석 Chapter4 : MyBatis 강의 듣기 시작했다.
+    - MyBatis란
+        - SQL Mapping Framework
+            - SQL을 별도 XML 파일로 분리해 사용할 수 있도록 한다.
+    
+
+#### 2023-02-13 Mon
+1. 스프링의 정석 Chapter4 : MyBatis 강의를 들었다.
+    - MyBatis를 활용해 Mapper.xml을 작성하여 DAO를 작성했다.
+        - Dao는 인터페이스로 구현한다.
+        - DaoImpl로 Dao구현체를 구현한다. 이 때 실제 구현은 데이터를 DB에서 불러오고 반환하는 것은 Mapper.xml이 SQL문을 이용해 담당하고, DaoImpl은 Mapper에 있는 함수 select 등과 같은 태그를 호출하면서 필요한 인자를 전달하는 역할을 한다.
 </div>
 </details>
