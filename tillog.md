@@ -234,5 +234,8 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
     - MyBatis를 활용해 Mapper.xml을 작성하여 DAO를 작성했다.
         - Dao는 인터페이스로 구현한다.
         - DaoImpl로 Dao구현체를 구현한다. 이 때 실제 구현은 데이터를 DB에서 불러오고 반환하는 것은 Mapper.xml이 SQL문을 이용해 담당하고, DaoImpl은 Mapper에 있는 함수 select 등과 같은 태그를 호출하면서 필요한 인자를 전달하는 역할을 한다.
+    
+#### 2023-02-14 Tue
+1. 스프링의 정석 Chapter4 : 페이징 공부 
 </div>
 </details>
