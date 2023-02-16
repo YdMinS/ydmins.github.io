@@ -243,5 +243,11 @@ TIL LOG는 그날 배운 내용들을 세세히 기록하기 보단 큰 흐름�
 1. 스프링의 정석 Chapter4 : 게시판 만들기 공부중
     - 페이징, 목록으로 이동, 삭제 실습을 했다.
     
+#### 2023-02-16 Thu
+1. 스프링의 정석 Chapter4 : 글쓰기, 글 수정 기능을 공부했다.
+    - RedirectAttribute
+        - RedirectAttribute.addFlashAttribute()를 사용하면 session에 데이터를 저장했다가 사용후 바로 삭제하기 때문에 정보를 은닉해서 전달하는 효과가 있다.
+    - Page번호, 주고 받은 데이터를 실패페이지에도 읽을 때와 같이 넘겨주면 데이터 유실을 막을 수 있다.
+    
 </div>
 </details>
